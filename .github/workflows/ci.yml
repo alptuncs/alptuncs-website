@@ -26,4 +26,8 @@ jobs:
         run: npm install
         
       - name: Generate static website
-        run: npm run generate -ddd
+        run: npm run generate
+
+      - run: |
+          cd dist
+          ls
