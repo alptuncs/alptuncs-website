@@ -1,10 +1,14 @@
 <template>
   <div class="container">
-    <h1>Hello You have clicked the button: {{this.$store.state.counterStore.counter}} times</h1>
+    <h1>Hello, you have clicked the button: {{this.$store.state.counterStore.counter}} times</h1>
     <div class="space">
-      <button class="helloButton"
+      <button class="button"
               @click="increasevalue">
         Click
+      </button>
+      <button class="button"
+              @click="reset">
+        Reset
       </button>
     </div>
   </div>
@@ -15,6 +19,9 @@
     methods: {
       increasevalue() {
         this.$store.commit('counterStore/increment')
+      },
+      reset() {
+        this.$store.commit('counterStore/reset')
       }
     },
   }
@@ -31,9 +38,10 @@
     text-align: center;
   }
 
-  .helloButton {
+  .button {
     padding: 4px;
     background: #808080b2;
     border-radius: 10px;
+    color: white;
   }
 </style>
