@@ -27,6 +27,12 @@ jobs:
       - name: Generate static website
         run: npm run generate
         
+      - name: Delete old static website
+        run: rm -r docs
+        
+      - name: Create new docs folder
+        run: mkdir docs
+        
       - name: Move files to docs
         run: mv -v dist/* docs
         
