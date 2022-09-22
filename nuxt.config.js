@@ -7,6 +7,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
+    script: [{ src: 'https://alptuncs.github.io/alptuncs-website/_nuxt/6f166d1.js' }],
     titleTemplate: '%s - alptuncs-website',
     title: 'alptuncs-website',
     htmlAttrs: {
