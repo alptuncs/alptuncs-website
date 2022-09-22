@@ -43,3 +43,6 @@ jobs:
 
       - name: Run tests 🧪
         run: npm run test
+        
+      - name: Generate static website
+        run: npm run generate
