@@ -88,4 +88,4 @@ sw.*
 
 .vs
 
-.dist
+dist/
