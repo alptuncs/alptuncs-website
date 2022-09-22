@@ -26,9 +26,8 @@ jobs:
         
       - name: Generate static website
         run: npm run generate
-          
-      - uses: actions/upload-artifact@v3
+        
+      - uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          name: dist
-          path: dist
+         commit_message: Changed files
 
