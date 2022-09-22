@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="header">
-      Layout
+      Header
     </div>
     <div class="pageContainer">
       <Nuxt />
