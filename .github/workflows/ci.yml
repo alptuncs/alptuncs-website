@@ -17,7 +17,6 @@ jobs:
     steps:
       - name: Checkout 🛎
         uses: actions/checkout@master
-      - run: ls
 
       - name: Setup node env 🏗
         uses: actions/setup-node@v2.1.5
@@ -27,7 +26,9 @@ jobs:
         
       - name: Generate static website
         run: npm run generate
+          
+      - uses: actions/upload-artifact@v3
+        with:
+          name: dist
+          path: dist
 
-      - run: |
-          cd dist
-          ls
