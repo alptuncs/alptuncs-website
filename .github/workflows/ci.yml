@@ -20,9 +20,6 @@ jobs:
 
       - name: Setup node env 🏗
         uses: actions/setup-node@v2.1.5
-
-      - name: Install dependencies 👨🏻‍💻
-        run: npm ci --prefer-offline --no-audit
         
       - name: install packages
         run: npm install
