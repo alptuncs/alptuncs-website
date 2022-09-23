@@ -7,11 +7,16 @@
       <v-btn @click="increasevalue">Click</v-btn>
       <v-btn @click="reset">Reset</v-btn>
     </div>
+    <gallery></gallery>
   </div>
 </template>
 
 <script>
+  import gallery from '~/components/gallery.vue'
   export default {
+    components: {
+      gallery
+    },
     methods: {
       increasevalue() {
         this.$store.commit('counterStore/increment')
