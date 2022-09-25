@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="title">
-      <h1>Hello you have clicked the button {{this.$store.state.counterStore.counter}} times</h1>
+      <h1>Hello, you have clicked the button {{this.$store.state.counterStore.counter}} times</h1>
     </div>
     <div class="buttonContainer">
       <v-btn @click="increasevalue">Click</v-btn>
