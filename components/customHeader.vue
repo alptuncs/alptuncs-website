@@ -1,6 +1,6 @@
 <template>
   <div class="header">
-    Alptuncs-Website
+    Custom Header
   </div>
 </template>
 
